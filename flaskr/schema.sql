@@ -9,10 +9,10 @@ CREATE TABLE user (
 
 CREATE TABLE expenses (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  expenses_title TEXT NOT NULL,
   expenses_date DATETIME NOT NULL,
-  expenses_description TEXT,
+  expenses_title TEXT NOT NULL,
   expenses_amount REAL DEFAULT 0.00,
+  expenses_description TEXT,
   expenses_category TEXT,
   author_id INTEGER NOT NULL,
   created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
